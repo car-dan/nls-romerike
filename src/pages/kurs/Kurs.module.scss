@@ -90,17 +90,39 @@
       }
     }
     &__liste {
+      &__error {
+        width: 50%;
+        text-align: center;
+        position: relative;
+        color: $dark;
+
+        p {
+          position: absolute;
+          top: 30%;
+          left: 25%;
+          background-color: $bgFade;
+          padding: 2rem;
+          font-size: $fontSizeLarge;
+          font-weight: bold;
+          border-radius: $borderRadius;
+        }
+      }
       &__choose {
         margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        font-size: $fontSizeSmall;
+        width: 100%;
 
         select {
-          margin-right: 2rem;
+          margin-right: 0.5rem;
           padding: 0.8rem;
           min-width: 25%;
           border: 1px solid $bgFade;
           border-radius: $borderRadius;
           box-shadow: $boxShadow;
           text-transform: uppercase;
+          font-size: $fontSizeSmall;
         }
       }
       &__kursItem {

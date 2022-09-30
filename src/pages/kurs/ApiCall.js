@@ -8,17 +8,18 @@ import classes from "./Kurs.module.scss";
 
 const url = BASE_URL + "/kurs";
 
-export default function ApiCall() {
+export default function ApiCall(props) {
   const [kurs, setKurs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectType, setSelectType] = useState("Type Kurs");
   const [selectSted, setSelectSted] = useState("Velg Sted");
-
+  console.log(props);
   useEffect(function () {
     async function getKurs() {
       try {
         const response = await axios.get(url);
+        console.log(response.data.data);
         setKurs(response.data.data);
       } catch (error) {
         setError(error.toString());
@@ -35,6 +36,18 @@ export default function ApiCall() {
   const kursSted = [...new Set(kurs.map((k) => k.attributes.sted))];
 
   const kursType = [...new Set(kurs.map((t) => t.attributes.Type_kurs))];
+  // const matchingKurs = kursType.filter((k) => {
+  //   return (k = props);
+  // });
+
+  // console.log(kursType);
+  // console.log(matchingKurs);
+  // if (matchingKurs.length === 0)
+  //   return (
+  //     <div className={classes.kurs__main__liste__error}>
+  //       <p>Ingen kurs som matcher</p>
+  //     </div>
+  //   );
 
   const handleChangeType = (e) => {
     setSelectType(e.target.value);

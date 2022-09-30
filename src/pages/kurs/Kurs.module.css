@@ -75,17 +75,38 @@
     width: 50%;
   }
 }
+.kurs__main__liste__error {
+  width: 50%;
+  text-align: center;
+  position: relative;
+  color: #0c0f0a;
+}
+.kurs__main__liste__error p {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  background-color: rgba(236, 103, 28, 0.2);
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 12px;
+}
 .kurs__main__liste__choose {
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  font-size: 0.7rem;
+  width: 100%;
 }
 .kurs__main__liste__choose select {
-  margin-right: 2rem;
+  margin-right: 0.5rem;
   padding: 0.8rem;
   min-width: 25%;
   border: 1px solid rgba(236, 103, 28, 0.2);
   border-radius: 12px;
   box-shadow: 0px 3px 6px #ec671c;
   text-transform: uppercase;
+  font-size: 0.7rem;
 }
 .kurs__main__liste__kursItem {
   display: flex;

@@ -11,16 +11,18 @@ form {
 }
 @media (min-width: 48em) {
   form {
-    width: 60%;
+    width: 70%;
   }
 }
 @media (min-width: 1200px) {
   form {
-    width: 40%;
+    width: 60%;
   }
 }
 form h2 {
   text-align: center;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 form img {
   width: 100%;
@@ -38,7 +40,7 @@ label {
 
 input {
   display: block;
-  font-size: 1.5rem;
+  font-size: 0.7rem;
   width: 100%;
   border-radius: 12px;
   padding: 1rem;

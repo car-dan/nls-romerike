@@ -23,11 +23,13 @@
     z-index: 100;
 
     &__logo {
-      max-width: 25%;
+      max-width: 35%;
       height: 100%;
 
       @include breakpoint(md) {
         margin-top: 1.5rem;
+        max-width: 25%;
+        height: 100%;
       }
 
       img {

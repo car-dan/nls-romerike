@@ -49,7 +49,7 @@ function Kurs() {
               <Accordion id={id} title={title} content={content} />
             ))}
           </div>
-          <ApiCall />
+          <ApiCall type={overskrift} />
         </div>
       </div>
     </>
