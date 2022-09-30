@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import AuthContex from "../../components/contex/AuthContex";
 import axios from "axios";
 import { BASE_URL } from "../../constants/api";
+import moment from "moment/moment";
 
 import { Link, useParams } from "react-router-dom";
 
@@ -22,7 +23,6 @@ function ContactAut() {
       try {
         const response = await axios.get(url);
         let list = response.data.data;
-        console.log(list);
         list.sort((x) => (x.attributes.lest ? 1 : -1));
         setContactInfo(list);
       } catch (error) {
@@ -53,7 +53,7 @@ function ContactAut() {
                 {info.attributes.lest ? "Lest" : "Ny"}
               </div>
               <div className={classes.contactAut__item__date}>
-                {info.attributes.dato}
+                {moment(info.attributes.dato, "YYYY:MM:DD").format("DD.MM.YY")}
               </div>
               <div className={classes.contactAut__item__name}>
                 {info.attributes.navn}
