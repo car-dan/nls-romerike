@@ -8,7 +8,7 @@ import AuthContex from "../contex/AuthContex";
 import SearchBar from "../searchBar/Index";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [size, setSize] = useState({
     width: undefined,
     height: undefined,
