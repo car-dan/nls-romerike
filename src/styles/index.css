@@ -47,21 +47,28 @@ a:-webkit-any-link {
   background-color: rgba(236, 103, 28, 0.2);
   text-align: center;
   width: 100%;
-  margin-bottom: 4rem;
-  height: 15vh;
+  margin-bottom: 2rem;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (min-width: 48em) {
   .breadcrumbs {
-    height: 19vh;
-    margin-bottom: 8rem;
+    height: 14vh;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .breadcrumbs {
+    height: 14vh;
+    margin-bottom: 5rem;
   }
 }
 @media (min-width: 2500px) {
   .breadcrumbs {
     font-size: 2rem;
+    margin-bottom: 6rem;
   }
 }
 
