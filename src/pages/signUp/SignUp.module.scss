@@ -11,14 +11,16 @@ form {
   box-shadow: $boxShadow;
 
   @include breakpoint(md) {
-    width: 60%;
+    width: 70%;
   }
 
   @include breakpoint(lg) {
-    width: 40%;
+    width: 60%;
   }
   h2 {
     text-align: center;
+    font-size: $fontSizeMedium;
+    margin-bottom: 0.5rem;
   }
 
   img {
@@ -39,7 +41,7 @@ label {
 
 input {
   display: block;
-  font-size: $fontSizeLarge;
+  font-size: $fontSizeSmall;
   width: 100%;
   border-radius: $borderRadius;
   padding: 1rem;

@@ -49,6 +49,7 @@ $boxShadow: 0px 3px 6px $primary;
 //font size
 
 $fontSizeSmall: 0.7rem;
+$fontSizeMedium: 1rem;
 $fontSizeLarge: 1.5rem;
 
 @mixin breakpoint($point) {

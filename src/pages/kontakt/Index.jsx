@@ -96,10 +96,13 @@ function Kontakt(data) {
 
       <form onSubmit={handleSubmit(OnSubmit)}>
         <h2>Eller send oss en melding her:</h2>
-        <input {...register("navn")} placeholder="Navn" />
+        <label />
+        <input {...register("navn")} name="missingLabel" placeholder="Navn" />
         {errors.navn && <span>{errors.navn.message}</span>}
+        <label />
         <input {...register("epost")} placeholder="Email" />
         {errors.epost && <span>{errors.epost.message}</span>}
+        <label />
         <input {...register("phone")} placeholder="Telefonnr" />
         {errors.phone && <span>{errors.phone.message}</span>}
         <textarea {...register("kommentar")} placeholder="Kommentar" />

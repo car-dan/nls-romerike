@@ -41,7 +41,13 @@
   }
 
   @include breakpoint(lg) {
-    width: 50%;
+    width: 60%;
+  }
+}
+
+.contactForm {
+  input {
+    margin-top: 1rem;
   }
 }
 
@@ -90,5 +96,16 @@
       font-size: $fontSizeLarge;
       border-spacing: 1.5rem;
     }
+  }
+
+  @include breakpoint(md) {
+    border-spacing: 1.2rem;
+    width: 70%;
+  }
+
+  @include breakpoint(lg) {
+    width: 60%;
+    font-size: $fontSizeLarge;
+    border-spacing: 1.5rem;
   }
 }
