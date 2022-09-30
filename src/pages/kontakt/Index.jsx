@@ -5,6 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { BASE_URL } from "../../constants/api";
 import { useState } from "react";
 import axios from "axios";
+import moment from "moment/moment";
 
 import classes from "./Contact.module.scss";
 
@@ -28,6 +29,7 @@ function Kontakt(data) {
   const [formValues, setFormValues] = useState(initialValues);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [buttonText, setButtonText] = useState("Send");
+  const today = moment().toISOString(new Date());
 
   const {
     register,
@@ -48,18 +50,16 @@ function Kontakt(data) {
           epost: formValues.epost,
           telefonnr: formValues.phone,
           tekst: formValues.kommentar,
+          dato: today,
         },
       })
       .then((response) => {
         if (response?.status === 200) {
           setButtonText("Sendt");
-          console.log("sendt");
-          console.log(initialValues);
           setFormValues(initialValues);
         } else {
           alert(response?.message);
         }
-        console.log(response);
       })
       .catch((err) => {
         console.log(err);

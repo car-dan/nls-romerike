@@ -22,6 +22,7 @@ function ContactAut() {
       try {
         const response = await axios.get(url);
         let list = response.data.data;
+        console.log(list);
         list.sort((x) => (x.attributes.lest ? 1 : -1));
         setContactInfo(list);
       } catch (error) {
