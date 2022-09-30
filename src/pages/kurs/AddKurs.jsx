@@ -63,7 +63,7 @@ function AddKurs() {
           <h2>Kurs</h2>
         </div>
       </div>
-      <div className={classes.kurs__main__liste__choose}>
+      <div className={classes.kurs_update}>
         <select value={selectType} onChange={handleChangeType}>
           <option value="default">Velg Kurs</option>
           {kursType.map((type) => {

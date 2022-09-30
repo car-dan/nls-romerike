@@ -112,3 +112,13 @@
     width: 40%;
   }
 }
+
+.kurs_update {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  select {
+    margin: 1rem;
+  }
+}

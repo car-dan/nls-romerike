@@ -129,4 +129,13 @@ fieldset {
   .contact_info {
     width: 40%;
   }
+}
+
+.kurs_update {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.kurs_update select {
+  margin: 1rem;
 }/*# sourceMappingURL=Contact.module.css.map */

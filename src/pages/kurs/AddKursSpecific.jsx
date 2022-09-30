@@ -105,7 +105,7 @@ function AddKursSpecific() {
         if (response?.status === 200) {
           setButtonText("Sendt");
           setTimeout(function () {
-            setButtonText("Oppdater");
+            setButtonText("Oppdatert");
           }, 2000);
         } else {
           alert(response?.message);
