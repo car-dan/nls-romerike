@@ -106,12 +106,7 @@ function AddKursNew() {
         <label>Kurs </label>
         <input type="text" name="type" value={type} onChange={handleChange} />
         <label>Nivå </label>
-        <input
-          type="text"
-          name="niva"
-          defaultValue={niva}
-          onClick={handleChange}
-        />
+        <input type="text" name="niva" value={niva} onClick={handleChange} />
         <label>Start dato </label>
         <input
           type="date"
