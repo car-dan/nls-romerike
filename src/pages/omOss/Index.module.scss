@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+@import "../../components/layout/Layout.module.scss";
+
+.omOss_content {
+  width: 90%;
+  margin: 0 auto;
+
+  h3 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+}

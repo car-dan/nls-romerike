@@ -1,0 +1,78 @@
+@import "../../styles/variables.scss";
+
+form {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 0.2px solid $primary;
+  padding: 2rem;
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
+
+  @include breakpoint(md) {
+    width: 60%;
+  }
+
+  @include breakpoint(lg) {
+    width: 40%;
+  }
+  h2 {
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: $borderRadius;
+    border: 1px solid $bgFade;
+  }
+}
+
+label {
+  // font-size: $fontSizeSmall;
+  font-weight: light;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  text-transform: capitalize;
+}
+
+input {
+  display: block;
+  font-size: $fontSizeLarge;
+  width: 100%;
+  border-radius: $borderRadius;
+  padding: 1rem;
+  border: 2px solid $bgFade;
+}
+
+button {
+  display: block;
+  margin-top: 2rem;
+  border-radius: $borderRadius;
+  padding: 2rem;
+  border: 1px solid $primary;
+  background-color: $primary;
+  width: 100%;
+  color: $bg;
+  font-weight: bold;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+
+  font-size: 2rem;
+
+  // box-shadow: $boxShadow;
+}
+
+span {
+  color: red;
+  font-size: 0.9rem;
+}
+
+textarea {
+  display: block;
+  margin-top: 1rem;
+  border-radius: $borderRadius;
+  padding: 1rem;
+  border: 2px solid $bgFade;
+}

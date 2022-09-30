@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+.container {
+  min-height: calc(85vh - 100px);
+  width: 100%;
+  margin: 0rem 0 6rem 0;
+  background: #fffffc;
+}
+@media (min-width: 48em) {
+  .container {
+    margin: 0rem 0 8rem 0;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    margin: 0 0 10rem 0;
+  }
+}
+
+fieldset {
+  border: none;
+}
+
+.omOss_content {
+  width: 90%;
+  margin: 0 auto;
+}
+.omOss_content h3 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=Index.module.css.map */

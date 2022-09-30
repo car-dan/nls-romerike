@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,wHAAI;ADGZ,AAAA,SAAS,CAAC;EACR,SAAS,EAAE,GAAG;EACd,MAAM,ECaa,IAAI,CDbK,IAAI;EAChC,OAAO,EAAE,IAAI;EACb,GAAG,EAAE,IAAI;CASV;;ACgCG,MAAM,EAAE,SAAS,EAAE,IAAI;ED7C3B,AAAA,SAAS,CAAC;IAON,qBAAqB,EAAE,cAAc;IACrC,MAAM,ECQW,KAAK,CDRM,IAAI;GAKnC;;;ACqCG,MAAM,EAAE,SAAS,EAAE,MAAM;EDlD7B,AAAA,SAAS,CAAC;IAWN,qBAAqB,EAAE,cAAc;GAExC;;;AAED,AAAA,GAAG,CAAC;EACF,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,KAAK;CAClB",
+    "sources": [
+        "../src/pages/nyheter/News.module.scss",
+        "../src/styles/variables.scss"
+    ],
+    "names": [],
+    "file": "News.module.css"
+}

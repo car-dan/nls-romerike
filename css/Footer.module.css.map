@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,wHAAI;ADEZ,AAAA,OAAO,CAAC;EACN,KAAK,EAAE,IAAI;EACX,MAAM,ECwBO,KAAK;EDvBlB,OAAO,EAAE,MAAM;EACf,gBAAgB,ECAX,OAAO;EDCZ,KAAK,ECAC,OAAO;EDKb,UAAU,EAAE,aAAa;CAY1B;;ACwBG,MAAM,EAAE,SAAS,EAAE,IAAI;ED9C3B,AAAA,OAAO,CAAC;IAQJ,OAAO,EAAE,KAAK;GAcjB;;;AAVE,AAAD,gBAAU,CAAC;EACT,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,aAAa;CAC/B;;AACA,AAAD,eAAS,CAAC;EACR,UAAU,EAAE,MAAM;CACnB",
+    "sources": [
+        "../src/components/footer/Footer.module.scss",
+        "../src/styles/variables.scss"
+    ],
+    "names": [],
+    "file": "Footer.module.css"
+}

@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,wHAAI;AAAZ,OAAO,CAAC,wHAAI;ACEZ,AAAA,UAAU;AACV,SAAS,CAAC;EACR,SAAS,EAAE,GAAG;EACd,MAAM,EDaa,IAAI,CCbK,IAAI;EAChC,OAAO,EAAE,IAAI;EACb,GAAG,EAAE,IAAI;CASV;;ADgCG,MAAM,EAAE,SAAS,EAAE,IAAI;EC9C3B,AAAA,UAAU;EACV,SAAS,CAAC;IAON,qBAAqB,EAAE,cAAc;IACrC,MAAM,EDQW,KAAK,CCRM,IAAI;GAKnC;;;ADqCG,MAAM,EAAE,SAAS,EAAE,MAAM;ECnD7B,AAAA,UAAU;EACV,SAAS,CAAC;IAWN,qBAAqB,EAAE,cAAc;GAExC;;;AFID,AAAA,SAAS,CAAC;EACT,gBAAgB,ECbP,OAAO;EDchB,KAAK,EAAE,KAAK;EACZ,aAAa,ECAC,IAAI;EDClB,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;CAClB",
+    "sources": [
+        "../src/components/kurs/kursOversikt.scss",
+        "../src/styles/variables.scss",
+        "../src/styles/gridStyles.scss",
+        "../src/styles/variables.scss"
+    ],
+    "names": [],
+    "file": "kursOversikt.css"
+}

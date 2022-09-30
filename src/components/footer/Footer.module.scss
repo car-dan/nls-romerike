@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  width: 100%;
+  height: $footerHeight;
+  padding: 0 1rem;
+  background-color: $dark;
+  color: $light;
+
+  @include breakpoint(md) {
+    padding: 0 3em;
+  }
+  transition: 0.3s ease all;
+
+  &__content {
+    padding-top: 1.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__middle {
+    text-align: center;
+  }
+}

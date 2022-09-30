@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+
+$Poppins: "Poppins", sans-serif;
+
+// colors
+
+$dark: #0c0f0a;
+$light: #fffffc;
+$primary: #ec671c;
+$bg: #fffffc;
+
+$bgFade: rgba($primary, 0.2);
+$bgFadeLight: rgba($primary, 0.1);
+
+//spacing
+
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+//spacing between sections
+
+$spacing-md-section: 5rem;
+$spacing-lg-section: 6.2em;
+
+//border radius
+
+$borderRadius: 12px;
+
+//header height
+
+$headerHeight: 100px;
+$footerHeight: 150px;
+
+//box shadow
+
+$boxShadow: 0px 3px 6px $primary;
+// @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+//   @if $inset {
+//     -webkit-box-shadow: inset $top $left $blur $color;
+//     -moz-box-shadow: inset $top $left $blur $color;
+//     box-shadow: inset $top $left $blur $color;
+//   } @else {
+//     -webkit-box-shadow: $top $left $blur $color;
+//     -moz-box-shadow: $top $left $blur $color;
+//     box-shadow: $top $left $blur $color;
+//   }
+// }
+
+//font size
+
+$fontSizeSmall: 0.7rem;
+$fontSizeLarge: 1.5rem;
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    //768px
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+  @if $point == lg {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}

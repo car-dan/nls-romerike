@@ -1,0 +1,64 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: $bg;
+  height: 100%;
+}
+body {
+  width: 100%;
+  min-height: 100%;
+  font-family: $Poppins;
+  color: $dark;
+  background-color: $bg;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumbs {
+  position: relative;
+  background-color: $bgFade;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 4rem;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(md) {
+    background-color: $bgFade;
+    height: 19vh;
+    margin-bottom: 8rem;
+  }
+}
+
+.preview {
+  margin-top: 1rem;
+
+  img {
+    margin-top: 1rem;
+  }
+}

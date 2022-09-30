@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+.kursListe,
+.articles {
+  max-width: 90%;
+  margin: 5rem auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 48em) {
+  .kursListe,
+  .articles {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    margin: 6.2em auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .kursListe,
+  .articles {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*# sourceMappingURL=gridStyles.css.map */

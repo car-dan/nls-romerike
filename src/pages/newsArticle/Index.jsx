@@ -1,0 +1,52 @@
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { BASE_URL } from "../../constants/api";
+
+import classes from "./NewsArticle.module.scss";
+
+function NewsArticle() {
+  let params = useParams();
+  const [article, setArticle] = useState([]);
+  const [activeTab, setActiveTab] = useState("instructions");
+
+  const url = BASE_URL + `/articles/${params.id}?populate=*`;
+
+  const fetchDetails = async () => {
+    console.log(params.id);
+    const data = await fetch(url);
+    const test = await data.json();
+    console.log(test.data.attributes);
+    setArticle(test.data.attributes);
+  };
+
+  useEffect(() => {
+    fetchDetails().catch(console.error);
+  }, [params.id]);
+
+  let imageSource = "";
+  let imageAlt = "";
+
+  if (article.Image) {
+    imageSource = article.Image.data.attributes.url;
+    imageAlt = article.Image.data.attributes.alternativeText;
+  }
+
+  return (
+    <>
+      <div className="breadcrumbs">
+        <div className="breadcrumbs_text">
+          <h1>Nyhet</h1>
+        </div>
+      </div>
+      <div className={classes.article}>
+        <img src={imageSource} alt={imageAlt} />
+        <div className={classes.article__content}>
+          <h2>{article.Title}</h2>
+          <p>{article.text}</p>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default NewsArticle;

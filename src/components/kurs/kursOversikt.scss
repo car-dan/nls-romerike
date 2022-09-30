@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+@import "../../styles/gridStyles.scss";
+
+// .kursListe {
+//   max-width: 90%;
+//   margin: $spacing-md-section auto;
+//   display: grid;
+//   gap: 1rem;
+
+//   @include breakpoint(md) {
+//     grid-template-columns: repeat(2, 1fr);
+//     margin: $spacing-lg-section auto;
+//   }
+//   @include breakpoint(lg) {
+//     grid-template-columns: repeat(4, 1fr);
+//   }
+// }
+
+//endre str i mobilversjon
+.kursType {
+  background-color: $primary;
+  color: white;
+  border-radius: $borderRadius;
+  padding: 2rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

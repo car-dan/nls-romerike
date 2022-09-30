@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+.kurs {
+  max-width: 100%;
+}
+.kurs__breadcrumbs {
+  background-color: rgba(236, 103, 28, 0.2);
+  text-align: center;
+  width: 100%;
+  margin-bottom: 4rem;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kurs__breadcrumbs img {
+  display: none;
+}
+@media (min-width: 48em) {
+  .kurs__breadcrumbs {
+    background-color: rgba(236, 103, 28, 0.2);
+    height: 25vh;
+  }
+  .kurs__breadcrumbs img {
+    display: inline;
+    width: 40%;
+    height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .kurs__breadcrumbs__text {
+    width: 60%;
+  }
+  .kurs__breadcrumbs h1 {
+    background-color: transparent;
+  }
+}
+.kurs__headerBar img {
+  display: none;
+}
+.kurs__headerBar h1 {
+  background-color: rgba(236, 103, 28, 0.2);
+}
+.kurs__main {
+  width: 90%;
+  margin: 5rem auto;
+}
+.kurs__main__info, .kurs__main__liste {
+  width: 90%;
+  margin: 5rem auto;
+}
+.kurs__main__info__list__dropdown {
+  padding: 0.7rem;
+  background-color: rgba(236, 103, 28, 0.2);
+  border-radius: 12px 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.kurs__main__info__list__dropdown__content {
+  border-bottom: 1px solid rgba(236, 103, 28, 0.2);
+  border-left: 0.5px solid rgba(236, 103, 28, 0.1);
+  border-radius: 0 0 12px 12px;
+  margin-top: -0.3rem;
+  padding: 1.3rem;
+}
+@media (min-width: 1200px) {
+  .kurs__main {
+    display: flex;
+    justify-content: space-between;
+  }
+  .kurs__main__info {
+    width: 30%;
+  }
+  .kurs__main__liste {
+    width: 50%;
+  }
+}
+.kurs__main__liste__choose {
+  margin-bottom: 2rem;
+}
+.kurs__main__liste__choose select {
+  margin-right: 2rem;
+  padding: 0.8rem;
+  min-width: 25%;
+  border: 1px solid rgba(236, 103, 28, 0.2);
+  border-radius: 12px;
+  box-shadow: 0px 3px 6px #ec671c;
+  text-transform: uppercase;
+}
+.kurs__main__liste__kursItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.6rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0px 3px 6px #ec671c;
+  font-size: 0.5rem;
+}
+.kurs__main__liste__kursItem__button {
+  margin: 0;
+  padding: 0.6rem;
+  background-color: #ec671c;
+  width: 25%;
+  border-radius: 0 12px 12px 0;
+}
+@media (min-width: 48em) {
+  .kurs__main__liste__kursItem {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .kurs__main__liste__kursItem {
+    font-size: 1.2rem;
+  }
+  .kurs__main__liste__kursItem__button {
+    padding: 1rem;
+  }
+}/*# sourceMappingURL=Kurs.module.css.map */
