@@ -57,6 +57,7 @@
           backdrop-filter: blur(2px);
   transform: translate(0);
   transition: 0.3s ease transform;
+  z-index: 10000;
 }
 @media (min-width: 48em) {
   .header__content__nav {
