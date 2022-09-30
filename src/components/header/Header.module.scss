@@ -128,8 +128,6 @@
         cursor: pointer;
         outline: none;
         padding: 0.75rem 1.25rem;
-        border-radius: $borderRadius;
-        font-size: 1rem;
         font-family: inherit;
         background: none;
         text-shadow: none;
@@ -138,6 +136,19 @@
         border: 1px solid transparent;
         transition: 0.3s ease all;
         margin-top: 0;
+
+        @include breakpoint(md) {
+          color: $dark;
+          font-size: $fontSizeSmall;
+        }
+
+        @include breakpoint(lg) {
+          font-size: $fontSizeMedium;
+        }
+
+        @include breakpoint(xl) {
+          font-size: $fontSizeXl;
+        }
 
         &:hover {
           border-color: $primary;

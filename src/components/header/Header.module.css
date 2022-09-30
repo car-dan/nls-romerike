@@ -134,8 +134,6 @@
   cursor: pointer;
   outline: none;
   padding: 0.75rem 1.25rem;
-  border-radius: 12px;
-  font-size: 1rem;
   font-family: inherit;
   background: none;
   text-shadow: none;
@@ -144,6 +142,22 @@
   border: 1px solid transparent;
   transition: 0.3s ease all;
   margin-top: 0;
+}
+@media (min-width: 48em) {
+  .header__content__nav button {
+    color: #0c0f0a;
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 1200px) {
+  .header__content__nav button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 2500px) {
+  .header__content__nav button {
+    font-size: 2rem;
+  }
 }
 .header__content__nav button:hover {
   border-color: #ec671c;
