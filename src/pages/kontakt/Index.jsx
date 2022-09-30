@@ -3,27 +3,31 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { BASE_URL } from "../../constants/api";
-import { isValid } from "date-fns";
 import { useState } from "react";
+import axios from "axios";
 
 import classes from "./Contact.module.scss";
 
+const initialValues = {
+  navn: "navn",
+  epost: "epost",
+  phone: "tlf",
+  kommentar: "kommentar",
+};
+
 const schema = yup.object().shape({
-  navn: yup.string().required("Fyll inn navn").min(3, "minimum 3 bokstaver"),
+  navn: yup.string().required("Fyll inn navn"),
   epost: yup.string().email().required("Fyll inn en gyldig email"),
   phone: yup.string().required("Fyll inn tlf number").min(8),
   kommentar: yup.string().required("Fyll inn her"),
 });
 
+const url = BASE_URL + "/kontaktskjemas";
+
 function Kontakt(data) {
-  const initialValues = {
-    navn: "",
-    epost: "",
-    phone: "",
-    kommentar: "",
-  };
   const [formValues, setFormValues] = useState(initialValues);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [buttonText, setButtonText] = useState("Send");
 
   const {
     register,
@@ -33,39 +37,33 @@ function Kontakt(data) {
     resolver: yupResolver(schema),
   });
 
-  async function OnSubmit(data) {
-    const url = BASE_URL + "/kontaktskjemas";
+  function OnSubmit(data) {
+    setButtonText("Send?");
     setFormValues(data);
-    console.log(data);
 
-    if (isValid) {
-      console.log("juppi");
-
-      const apiData = JSON.stringify({
+    axios
+      .post(url, {
         data: {
           navn: formValues.navn,
           epost: formValues.epost,
-          tlf: formValues.phone,
-          // kommentar: formValues.kommentar,
+          telefonnr: formValues.phone,
+          tekst: formValues.kommentar,
         },
+      })
+      .then((response) => {
+        if (response?.status === 200) {
+          setButtonText("Sendt");
+          console.log("sendt");
+          console.log(initialValues);
+          setFormValues(initialValues);
+        } else {
+          alert(response?.message);
+        }
+        console.log(response);
+      })
+      .catch((err) => {
+        console.log(err);
       });
-
-      const option = {
-        method: "POST",
-        body: apiData,
-        headers: {
-          "Content-Type": "application/json",
-        },
-      };
-
-      try {
-        const response = await fetch(url, option);
-        const json = await response.json();
-        console.log(json);
-      } catch (error) {
-        console.log(error);
-      }
-    }
   }
 
   return (
@@ -97,17 +95,20 @@ function Kontakt(data) {
       <form onSubmit={handleSubmit(OnSubmit)}>
         <h2>Eller send oss en melding her:</h2>
         <label />
-        <input {...register("navn")} name="missingLabel" placeholder="Navn" />
+        <input {...register("navn")} placeholder={formValues.navn} />
         {errors.navn && <span>{errors.navn.message}</span>}
         <label />
-        <input {...register("epost")} placeholder="Email" />
+        <input {...register("epost")} placeholder={formValues.epost} />
         {errors.epost && <span>{errors.epost.message}</span>}
         <label />
-        <input {...register("phone")} placeholder="Telefonnr" />
+        <input {...register("phone")} placeholder={formValues.phone} />
         {errors.phone && <span>{errors.phone.message}</span>}
-        <textarea {...register("kommentar")} placeholder="Kommentar" />
+        <textarea
+          {...register("kommentar")}
+          placeholder={formValues.kommentar}
+        />
         {errors.kommentar && <span>{errors.kommentar.message}</span>}
-        <button>Send</button>
+        <button>{buttonText}</button>
       </form>
     </>
   );
