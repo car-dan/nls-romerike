@@ -76,6 +76,12 @@ button {
 }
 @media (min-width: 48em) {
   button {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+@media (min-width: 2500px) {
+  button {
     font-size: 2rem;
     padding: 2rem;
   }

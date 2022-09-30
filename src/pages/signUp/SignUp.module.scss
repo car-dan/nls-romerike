@@ -79,6 +79,11 @@ button {
   font-size: 1rem;
 
   @include breakpoint(md) {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  @include breakpoint(xl) {
     font-size: 2rem;
     padding: 2rem;
   }
