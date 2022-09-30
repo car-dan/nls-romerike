@@ -182,6 +182,9 @@
   position: relative;
   z-index: 3000000;
 }
+.header__content__toggle__closed {
+  color: white;
+}
 .header__content__toggle:hover {
   color: #ec671c;
 }

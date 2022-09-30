@@ -177,6 +177,10 @@
       position: relative;
       z-index: 3000000;
 
+      &__closed {
+        color: white;
+      }
+
       &:hover {
         color: $primary;
       }
