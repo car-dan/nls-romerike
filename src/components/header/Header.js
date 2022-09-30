@@ -96,7 +96,9 @@ const Header = () => {
               {auth ? (
                 <button onClick={logout}>Log ut</button>
               ) : (
-                <Link to="/login">Login</Link>
+                <Link to="/login" onClick={menuToggleHandler}>
+                  Login
+                </Link>
               )}
             </li>
           </ul>
