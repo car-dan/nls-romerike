@@ -19,6 +19,7 @@ import SignUpAuth from "./pages/signUp/SignUpAuth";
 import EditNewsArticle from "./pages/newsArticle/EditNewsArticle";
 import AddKurs from "./pages/kurs/AddKurs";
 import AddKursSpecific from "./pages/kurs/AddKursSpecific";
+import AddKursNew from "./pages/kurs/AddKursNew";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path="/kurs/pamelding/:id" exact element={<SignUp />} />
             <Route path="/kurs/pamelding" exact element={<SignUpList />} />
             <Route path="/kurs/add" exact element={<AddKurs />} />
+            <Route path="/kurs/addNew" exact element={<AddKursNew />} />
             <Route path="/kurs/add/:id" exact element={<AddKursSpecific />} />
             <Route path="/pamelding/auth/:id" exact element={<SignUpAuth />} />
             <Route path="/kontakt/auth" exact element={<ContactAut />} />

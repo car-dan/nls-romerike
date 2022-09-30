@@ -25,6 +25,20 @@ fieldset {
   max-width: 90%;
   margin: 0 auto;
 }
+.contactAut__emty {
+  width: 100%;
+  background-color: rgba(236, 103, 28, 0.2);
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: 0px 3px 6px #ec671c;
+  font-size: 0.7rem;
+  min-height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0c0f0a;
+  font-weight: bold;
+}
 .contactAut__item {
   width: 100%;
   display: flex;

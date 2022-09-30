@@ -95,6 +95,13 @@ function AddKurs() {
         </select>
       </div>
       <div className={classes.contactAut}>
+        <div className={classes.contactAut__add}>
+          <div className={classes.contactAut__emty}>
+            <div className={classes.contactAut__item__emty}>
+              <Link to={"/kurs/addNew"}>Legg til ny</Link>
+            </div>
+          </div>
+        </div>
         {kurs.map((k) => {
           if (
             k.attributes.Type_kurs === selectType &&
