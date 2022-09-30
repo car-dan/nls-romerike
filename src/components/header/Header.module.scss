@@ -132,7 +132,8 @@
         background: none;
         text-shadow: none;
         font-weight: normal;
-        color: $dark;
+        color: $light;
+        font-size: 1rem;
         border: 1px solid transparent;
         transition: 0.3s ease all;
         margin-top: 0;
@@ -174,6 +175,7 @@
       font-size: 2rem;
       transition: 0.3s ease all;
       position: relative;
+      z-index: 3000000;
 
       &:hover {
         color: $primary;

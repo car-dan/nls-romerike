@@ -138,7 +138,8 @@
   background: none;
   text-shadow: none;
   font-weight: normal;
-  color: #0c0f0a;
+  color: #fffffc;
+  font-size: 1rem;
   border: 1px solid transparent;
   transition: 0.3s ease all;
   margin-top: 0;
@@ -179,6 +180,7 @@
   font-size: 2rem;
   transition: 0.3s ease all;
   position: relative;
+  z-index: 3000000;
 }
 .header__content__toggle:hover {
   color: #ec671c;
