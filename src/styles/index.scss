@@ -49,9 +49,12 @@ a:-webkit-any-link {
   align-items: center;
 
   @include breakpoint(md) {
-    background-color: $bgFade;
     height: 19vh;
     margin-bottom: 8rem;
+  }
+
+  @include breakpoint(xl) {
+    font-size: $fontSizeXl;
   }
 }
 

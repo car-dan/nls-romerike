@@ -14,7 +14,6 @@
     overflow: hidden;
     color: $dark;
     margin: 0 auto;
-    max-width: 1920px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -29,6 +28,12 @@
       @include breakpoint(md) {
         margin-top: 1.5rem;
         max-width: 25%;
+        height: 100%;
+      }
+
+      @include breakpoint(xl) {
+        margin-top: 1.5rem;
+        max-width: 30%;
         height: 100%;
       }
 
@@ -72,6 +77,7 @@
         display: flex;
         flex-direction: column;
         margin-bottom: $spacing-lg;
+
         @include breakpoint(md) {
           flex-direction: row;
           align-items: center;
@@ -82,6 +88,7 @@
         li {
           &:not(:last-child) {
             margin-bottom: $spacing-lg;
+
             @include breakpoint(md) {
               margin-bottom: 0;
               margin-left: $spacing-md;
@@ -96,6 +103,15 @@
 
             @include breakpoint(md) {
               color: $dark;
+              font-size: $fontSizeSmall;
+            }
+
+            @include breakpoint(lg) {
+              font-size: $fontSizeMedium;
+            }
+
+            @include breakpoint(xl) {
+              font-size: $fontSizeXl;
             }
 
             &:hover {

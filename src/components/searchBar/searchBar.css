@@ -23,6 +23,13 @@
   word-wrap: break-word;
   background-color: transparent;
 }
+@media (min-width: 2500px) {
+  .searchBar input {
+    height: 4rem;
+    width: 40rem;
+    font-size: 1.5rem;
+  }
+}
 
 .search_bar2 {
   z-index: -50;

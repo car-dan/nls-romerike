@@ -2,37 +2,47 @@
 
 .news {
   max-width: 90%;
-  border: 2px solid red;
-  margin: $spacing-md-section auto;
+  margin: $spacing-sm-section auto;
   display: grid;
   gap: 1rem;
 
   @include breakpoint(md) {
     grid-template-columns: repeat(2, 1fr);
-    margin: $spacing-lg-section auto;
   }
   @include breakpoint(lg) {
     grid-template-columns: repeat(3, 1fr);
+    margin: $spacing-lg-section auto;
+    gap: 2rem;
   }
 
   &__article {
+    height: 30vh;
+    // border: 2px solid $bgFade;
+    box-shadow: $boxShadowDark;
     position: relative;
+    border-radius: $borderRadius;
+
     img {
-      max-width: 100%;
+      width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: $borderRadius;
     }
 
     &__content {
       position: absolute;
       bottom: 0;
+      height: 35%;
       width: 100%;
       text-align: center;
+      font-size: $fontSizeSmall;
       z-index: 100;
       text-transform: capitalize;
-      padding: 2rem;
+      padding: 1rem;
       background: rgba(0, 0, 0, 0.6);
       color: white;
+      border-radius: 0 0 $borderRadius $borderRadius;
+      overflow: hidden;
     }
 
     &__add {
@@ -45,6 +55,21 @@
         color: white;
         font-size: 6rem;
         text-align: center;
+      }
+    }
+
+    @include breakpoint(md) {
+      height: 40vh;
+
+      &__content {
+        padding: 2rem;
+        font-size: $fontSizeMedium;
+      }
+    }
+    @include breakpoint(xl) {
+      &__content {
+        padding: 3rem;
+        font-size: $fontSizeLarge;
       }
     }
   }

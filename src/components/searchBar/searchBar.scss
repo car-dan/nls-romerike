@@ -22,6 +22,12 @@
     position: absolute;
     word-wrap: break-word;
     background-color: transparent;
+
+    @include breakpoint(xl) {
+      height: 4rem;
+      width: 40rem;
+      font-size: $fontSizeLarge;
+    }
   }
 }
 

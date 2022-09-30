@@ -19,6 +19,7 @@ $spacing-lg: 32px;
 
 //spacing between sections
 
+$spacing-sm-section: 3rem;
 $spacing-md-section: 5rem;
 $spacing-lg-section: 6.2em;
 
@@ -28,12 +29,14 @@ $borderRadius: 12px;
 
 //header height
 
-$headerHeight: 100px;
+$headerHeight: 12vh;
+
 $footerHeight: 150px;
 
 //box shadow
 
 $boxShadow: 0px 3px 6px $primary;
+$boxShadowDark: 0px 3px 6px $dark;
 // @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
 //   @if $inset {
 //     -webkit-box-shadow: inset $top $left $blur $color;
@@ -51,6 +54,7 @@ $boxShadow: 0px 3px 6px $primary;
 $fontSizeSmall: 0.7rem;
 $fontSizeMedium: 1rem;
 $fontSizeLarge: 1.5rem;
+$fontSizeXl: 2rem;
 
 @mixin breakpoint($point) {
   @if $point == md {
@@ -61,6 +65,12 @@ $fontSizeLarge: 1.5rem;
   }
   @if $point == lg {
     @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $point == xl {
+    @media (min-width: 2500px) {
       @content;
     }
   }

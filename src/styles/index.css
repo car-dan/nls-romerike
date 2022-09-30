@@ -50,9 +50,13 @@ a:-webkit-any-link {
 }
 @media (min-width: 48em) {
   .breadcrumbs {
-    background-color: rgba(236, 103, 28, 0.2);
     height: 19vh;
     margin-bottom: 8rem;
+  }
+}
+@media (min-width: 2500px) {
+  .breadcrumbs {
+    font-size: 2rem;
   }
 }
 
