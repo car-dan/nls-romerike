@@ -27,4 +27,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  @include breakpoint(xl) {
+    height: 30rem;
+    h3 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: $fontSizeXl;
+    }
+  }
 }

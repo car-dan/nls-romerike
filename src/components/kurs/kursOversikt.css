@@ -31,4 +31,15 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+@media (min-width: 2500px) {
+  .kursType {
+    height: 30rem;
+  }
+  .kursType h3 {
+    font-size: 3rem;
+  }
+  .kursType p {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=kursOversikt.css.map */

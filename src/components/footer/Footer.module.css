@@ -19,6 +19,20 @@
   align-items: center;
   justify-content: space-between;
 }
+.footer__content p {
+  font-size: 0.6rem;
+}
+@media (min-width: 48em) {
+  .footer__content p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 2500px) {
+  .footer__content p {
+    font-size: 1.5rem;
+  }
+}
 .footer__middle {
   text-align: center;
+  margin-top: 1.5rem;
 }/*# sourceMappingURL=Footer.module.css.map */

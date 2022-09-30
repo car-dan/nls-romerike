@@ -6,21 +6,36 @@ form {
   display: flex;
   flex-direction: column;
   border: 0.2px solid $primary;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: $borderRadius;
   box-shadow: $boxShadow;
 
-  @include breakpoint(md) {
-    width: 70%;
-  }
-
-  @include breakpoint(lg) {
-    width: 60%;
-  }
   h2 {
     text-align: center;
     font-size: $fontSizeMedium;
     margin-bottom: 0.5rem;
+  }
+
+  @include breakpoint(md) {
+    width: 70%;
+    padding: 2rem;
+  }
+
+  @include breakpoint(lg) {
+    width: 60%;
+    padding: 3rem;
+  }
+
+  @include breakpoint(xl) {
+    width: 40%;
+    padding: 4rem;
+
+    input {
+      font-size: $fontSizeXl;
+    }
+    h2 {
+      font-size: $fontSizeXl;
+    }
   }
 
   img {
@@ -77,4 +92,9 @@ textarea {
   border-radius: $borderRadius;
   padding: 1rem;
   border: 2px solid $bgFade;
+  font-size: $fontSizeSmall;
+
+  @include breakpoint(xl) {
+    font-size: $fontSizeXl;
+  }
 }

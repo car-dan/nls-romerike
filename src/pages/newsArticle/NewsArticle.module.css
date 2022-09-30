@@ -3,6 +3,29 @@
   max-width: 90%;
   margin: 5rem auto;
 }
+.article__content {
+  width: 100%;
+}
+.article__content h2 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+@media (min-width: 48em) {
+  .article__content h2 {
+    font-size: 1.5rem;
+  }
+  .article__content p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 2500px) {
+  .article__content h2 {
+    font-size: 2rem;
+  }
+  .article__content p {
+    font-size: 1.5rem;
+  }
+}
 .article img {
   max-width: 100%;
   margin-bottom: 2rem;
@@ -13,12 +36,10 @@
   }
   .article img {
     max-width: 50%;
+    max-height: 50vh;
     margin-right: 1rem;
   }
 }
 .article h2 {
   text-transform: uppercase;
-}
-.article p {
-  max-width: 40%;
 }/*# sourceMappingURL=NewsArticle.module.css.map */

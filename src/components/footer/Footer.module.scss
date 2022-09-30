@@ -18,8 +18,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    p {
+      font-size: 0.6rem;
+
+      @include breakpoint(md) {
+        font-size: $fontSizeMedium;
+      }
+      @include breakpoint(xl) {
+        font-size: $fontSizeLarge;
+      }
+    }
   }
   &__middle {
     text-align: center;
+    margin-top: 1.5rem;
   }
 }

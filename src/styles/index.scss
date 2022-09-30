@@ -30,6 +30,10 @@ p {
 
 .icon {
   font-size: 3rem;
+
+  @include breakpoint(xl) {
+    font-size: 5rem;
+  }
 }
 
 a:-webkit-any-link {

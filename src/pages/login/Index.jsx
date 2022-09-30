@@ -65,6 +65,7 @@ export default function LoginForm() {
         {loginError && <FormError>{loginError}</FormError>}
         <fieldset disabled={submitting}>
           <div>
+            <label />
             <input
               name="username"
               placeholder="Username"
@@ -78,6 +79,7 @@ export default function LoginForm() {
           </div>
 
           <div>
+            <label />
             <input
               name="password"
               placeholder="Password"

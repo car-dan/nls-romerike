@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={classes.footer__middle}>
-        Copyright @copy; NLS Romerike Krets
+        Copyright &copy; NLS Romerike Krets
       </div>
     </footer>
   );
