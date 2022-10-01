@@ -7,22 +7,23 @@
   z-index: 0;
 }
 .slider .arrow {
-  color: white;
-  width: 2.5rem;
-  height: 2.5rem;
+  color: transparent;
+  width: 10rem;
+  height: 10rem;
+  padding: 3rem;
   cursor: pointer;
   position: absolute;
-  top: 45%;
+  top: 30%;
   z-index: 1;
 }
 .slider .arrow :hover {
   color: #ec671c;
 }
 .slider .next {
-  right: 1.5rem;
+  right: 0;
 }
 .slider .prev {
-  left: 1.5rem;
+  left: 0;
 }
 
 .slide {
@@ -33,7 +34,7 @@
   height: 100%;
   opacity: 0;
   transform: translateX(-50%);
-  transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in;
   overflow: hidden;
 }
 .slide img {
@@ -54,15 +55,14 @@
   left: 0;
   opacity: 0;
   width: 100%;
-  text-transform: capitalize;
   color: white;
-  padding: 3rem;
+  padding: 2rem;
   background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-animation: slide-up 1s ease 0.5s;
-          animation: slide-up 1s ease 0.5s;
+  -webkit-animation: slide-up 0.5s ease-in 0.5s;
+          animation: slide-up 0.5s ease-in 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   visibility: hidden;
@@ -74,7 +74,7 @@
   100% {
     visibility: visible;
     top: 75%;
-    opacity: 1;
+    opacity: 500000;
   }
 }
 @keyframes slide-up {
@@ -84,6 +84,6 @@
   100% {
     visibility: visible;
     top: 75%;
-    opacity: 1;
+    opacity: 500000;
   }
 }/*# sourceMappingURL=Slider.css.map */

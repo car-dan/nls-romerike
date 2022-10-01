@@ -2,7 +2,7 @@
 .kursListe,
 .articles {
   max-width: 90%;
-  margin: 5rem auto;
+  margin: 3rem auto;
   display: grid;
   gap: 1rem;
 }
@@ -10,12 +10,13 @@
   .kursListe,
 .articles {
     grid-template-columns: repeat(2, 1fr);
-    margin: 6.2em auto;
+    margin: 5rem auto;
   }
 }
 @media (min-width: 1200px) {
   .kursListe,
 .articles {
     grid-template-columns: repeat(4, 1fr);
+    margin: 6.2em auto;
   }
 }/*# sourceMappingURL=gridStyles.css.map */

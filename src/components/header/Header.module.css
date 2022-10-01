@@ -23,7 +23,7 @@
   z-index: 100;
 }
 .header__content__logo {
-  max-width: 35%;
+  max-width: 40%;
   height: 100%;
 }
 @media (min-width: 48em) {

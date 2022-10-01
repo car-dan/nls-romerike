@@ -10,11 +10,9 @@
       margin-bottom: 1rem;
       font-size: $fontSizeMedium;
     }
-    p {
-      //   max-width: 40%;
-    }
 
     @include breakpoint(md) {
+      max-width: 60%;
       h2 {
         font-size: $fontSizeLarge;
       }
@@ -22,6 +20,7 @@
         font-size: $fontSizeMedium;
       }
     }
+
     @include breakpoint(xl) {
       h2 {
         font-size: $fontSizeXl;
@@ -39,6 +38,17 @@
 
   @include breakpoint(md) {
     display: flex;
+    max-width: 90%;
+
+    img {
+      max-width: 50%;
+      max-height: 50vh;
+      margin-right: 1rem;
+    }
+  }
+  @include breakpoint(lg) {
+    display: flex;
+    max-width: 60%;
 
     img {
       max-width: 50%;

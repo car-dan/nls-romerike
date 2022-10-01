@@ -11,6 +11,9 @@
   font-size: 1rem;
 }
 @media (min-width: 48em) {
+  .article__content {
+    max-width: 60%;
+  }
   .article__content h2 {
     font-size: 1.5rem;
   }
@@ -33,6 +36,18 @@
 @media (min-width: 48em) {
   .article {
     display: flex;
+    max-width: 90%;
+  }
+  .article img {
+    max-width: 50%;
+    max-height: 50vh;
+    margin-right: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .article {
+    display: flex;
+    max-width: 60%;
   }
   .article img {
     max-width: 50%;
