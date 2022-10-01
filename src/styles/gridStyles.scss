@@ -3,15 +3,16 @@
 .kursListe,
 .articles {
   max-width: 90%;
-  margin: $spacing-md-section auto;
+  margin: $spacing-sm-section auto;
   display: grid;
   gap: 1rem;
 
   @include breakpoint(md) {
     grid-template-columns: repeat(2, 1fr);
-    margin: $spacing-lg-section auto;
+    margin: $spacing-md-section auto;
   }
   @include breakpoint(lg) {
     grid-template-columns: repeat(4, 1fr);
+    margin: $spacing-lg-section auto;
   }
 }
