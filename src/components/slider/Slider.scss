@@ -8,13 +8,17 @@
   z-index: 0;
 
   .arrow {
-    color: white;
-    width: 2.5rem;
-    height: 2.5rem;
+    color: transparent;
+    width: 10rem;
+    height: 10rem;
+    padding: 3rem;
+    // width: 2.5rem;
+    // height: 2.5rem;
+    // padding: 5rem;
 
     cursor: pointer;
     position: absolute;
-    top: 45%;
+    top: 30%;
     z-index: 1;
 
     :hover {
@@ -23,10 +27,13 @@
   }
 
   .next {
-    right: 1.5rem;
+    // padding: 5rem;
+    right: 0;
+    // color: transparent;
   }
   .prev {
-    left: 1.5rem;
+    left: 0;
+    // color: transparent;
   }
 }
 
@@ -38,7 +45,7 @@
   height: 100%;
   opacity: 0;
   transform: translateX(-50%);
-  transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in;
   overflow: hidden;
 
   img {
@@ -71,7 +78,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: slide-up 1s ease 0.5s;
+  animation: slide-up 0.5s ease-in 0.5s;
   animation-fill-mode: forwards;
   visibility: hidden;
 
