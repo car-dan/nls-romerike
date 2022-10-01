@@ -84,7 +84,7 @@ export function Slider() {
               {index === currentSlide && (
                 <>
                   <img src={imageUrl} alt={imageAlt} />
-                  <Link to="/">
+                  <Link to={"/nyhet/" + article.id}>
                     <div className="content">
                       <h2>{article.attributes.Title}</h2>
                     </div>
