@@ -7,6 +7,7 @@ import classes from "./NewsArticle.module.scss";
 function NewsArticle() {
   let params = useParams();
   const [article, setArticle] = useState([]);
+  const [text, setText] = useState([]);
   const [activeTab, setActiveTab] = useState("instructions");
 
   const url = BASE_URL + `/articles/${params.id}?populate=*`;
@@ -16,6 +17,8 @@ function NewsArticle() {
     const data = await fetch(url);
     const test = await data.json();
     console.log(test.data.attributes);
+    console.log(test.data.attributes.text);
+    setText(test.data.attributes.text);
     setArticle(test.data.attributes);
   };
 
@@ -25,6 +28,12 @@ function NewsArticle() {
 
   let imageSource = "";
   let imageAlt = "";
+
+  let newText = text.toString().split(`\n`);
+
+  // let newTextList = newText.map((e) => {
+  //   console.log(e);
+  // });
 
   if (article.Image) {
     imageSource = article.Image.data.attributes.url;
@@ -42,7 +51,28 @@ function NewsArticle() {
         <img src={imageSource} alt={imageAlt} />
         <div className={classes.article__content}>
           <h2>{article.Title}</h2>
-          <p>{article.text}</p>
+          {newText.map((e) => {
+            if (e === "") {
+              return <br></br>;
+            } else if (e.includes("*")) {
+              let newE = e.split("");
+              console.log(newE);
+              let filteredE = newE.filter((newE) => newE !== "*");
+              console.log(filteredE.join(""));
+              return <h4>{filteredE.join("")}</h4>;
+            }
+
+            return <p>{e}</p>;
+          })}
+
+          {/* {newText.map((e) => {
+            if (e === "") {
+              console.log("space");
+              // return <br>;
+              return <br></br>;
+            }
+            return <p>{e}</p>;
+          })} */}
         </div>
       </div>
     </>

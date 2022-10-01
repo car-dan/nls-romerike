@@ -53,6 +53,9 @@ a:-webkit-any-link {
   justify-content: center;
   align-items: center;
 }
+.breadcrumbs h2 {
+  color: rgba(12, 15, 10, 0.7);
+}
 @media (min-width: 48em) {
   .breadcrumbs {
     height: 14vh;

@@ -52,6 +52,10 @@ a:-webkit-any-link {
   justify-content: center;
   align-items: center;
 
+  h2 {
+    color: rgba($dark, 0.7);
+  }
+
   @include breakpoint(md) {
     height: 14vh;
     margin-bottom: 3rem;
