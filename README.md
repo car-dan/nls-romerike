@@ -1,3 +1,14 @@
+# NLS Romerike
+
+This project is build to replace an exsisting website for a sports club.
+The thought behind the project is to make it easier for the users to sign up for classes.
+
+Today the costumer pays for an outside service for bookings for the courses. They wanted an itegrated solution for bookings, so that they did not have to pay a fee.
+
+The solution they use now also provides the birthdays in the wrong order, so they wanted an easier solution for that.
+
+follow the steps below to download and run the project-
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
