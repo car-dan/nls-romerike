@@ -8,5 +8,27 @@
   h3 {
     margin-top: 4rem;
     margin-bottom: 1rem;
+    font-size: $fontSizeMedium;
+  }
+
+  p {
+    font-size: $fontSizeSmall;
+  }
+
+  @include breakpoint(md) {
+    h3 {
+      font-size: $fontSizeLarge;
+    }
+    p {
+      font-size: $fontSizeMedium;
+    }
+  }
+  @include breakpoint(xl) {
+    h3 {
+      font-size: $fontSizeXl;
+    }
+    p {
+      font-size: $fontSizeLarge;
+    }
   }
 }

@@ -7,8 +7,13 @@
   &__content {
     width: 100%;
     h2 {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       font-size: $fontSizeMedium;
+    }
+
+    h4 {
+      margin-bottom: 0.8rem;
+      font-size: $fontSizeSmall;
     }
 
     @include breakpoint(md) {
@@ -16,6 +21,8 @@
       h2 {
         font-size: $fontSizeLarge;
       }
+
+      h4,
       p {
         font-size: $fontSizeMedium;
       }
@@ -25,6 +32,7 @@
       h2 {
         font-size: $fontSizeXl;
       }
+      h4,
       p {
         font-size: $fontSizeLarge;
       }

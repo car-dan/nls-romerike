@@ -18,6 +18,21 @@
     align-items: center;
     color: $dark;
     font-weight: bold;
+    padding: 1rem;
+
+    @include breakpoint(md) {
+      padding: 2rem;
+      font-size: $fontSizeMedium;
+    }
+
+    @include breakpoint(lg) {
+      padding: 2rem;
+      font-size: $fontSizeLarge;
+    }
+    @include breakpoint(xl) {
+      padding: 4rem;
+      font-size: $fontSizeXl;
+    }
   }
 
   &__item {
@@ -49,6 +64,10 @@
 
     @include breakpoint(md) {
       font-size: $fontSizeLarge;
+    }
+
+    @include breakpoint(xl) {
+      font-size: $fontSizeXl;
     }
   }
   @include breakpoint(md) {

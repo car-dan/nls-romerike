@@ -7,8 +7,12 @@
   width: 100%;
 }
 .article__content h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
+}
+.article__content h4 {
+  margin-bottom: 0.8rem;
+  font-size: 0.7rem;
 }
 @media (min-width: 48em) {
   .article__content {
@@ -17,7 +21,8 @@
   .article__content h2 {
     font-size: 1.5rem;
   }
-  .article__content p {
+  .article__content h4,
+.article__content p {
     font-size: 1rem;
   }
 }
@@ -25,7 +30,8 @@
   .article__content h2 {
     font-size: 2rem;
   }
-  .article__content p {
+  .article__content h4,
+.article__content p {
     font-size: 1.5rem;
   }
 }

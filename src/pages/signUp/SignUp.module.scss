@@ -61,6 +61,16 @@ input {
   border-radius: $borderRadius;
   padding: 1rem;
   border: 2px solid $bgFade;
+
+  @include breakpoint(md) {
+    font-size: $fontSizeMedium;
+  }
+  @include breakpoint(lg) {
+    font-size: $fontSizeLarge;
+  }
+  @include breakpoint(xl) {
+    font-size: $fontSizeXl;
+  }
 }
 
 button {

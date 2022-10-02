@@ -28,4 +28,24 @@ fieldset {
 .omOss_content h3 {
   margin-top: 4rem;
   margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.omOss_content p {
+  font-size: 0.7rem;
+}
+@media (min-width: 48em) {
+  .omOss_content h3 {
+    font-size: 1.5rem;
+  }
+  .omOss_content p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 2500px) {
+  .omOss_content h3 {
+    font-size: 2rem;
+  }
+  .omOss_content p {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=Index.module.css.map */
