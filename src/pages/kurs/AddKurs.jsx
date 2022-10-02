@@ -7,6 +7,7 @@ import { BASE_URL } from "../../constants/api";
 import { Link } from "react-router-dom";
 
 import classes from "../kontakt/Contact.module.scss";
+import Heading from "../../components/layout/Heading";
 
 const url = BASE_URL + "/kurs";
 
@@ -52,12 +53,7 @@ function AddKurs() {
 
   return (
     <>
-      <div className="breadcrumbs">
-        <div className="breadcrumbs_text">
-          <h1>Admin</h1>
-          <h2>Kurs</h2>
-        </div>
-      </div>
+      <Heading title="Adming" subtitle="Kurs" />
       <div className={classes.kurs_update}>
         <select value={selectType} onChange={handleChangeType}>
           <option value="default">Velg Kurs</option>

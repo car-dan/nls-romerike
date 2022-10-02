@@ -1,15 +1,11 @@
 import React from "react";
+import Heading from "../../components/layout/Heading";
 import classes from "./Index.module.scss";
 
 const OmOss = () => {
   return (
     <>
-      <div className="breadcrumbs">
-        <div className="breadcrumbs_text">
-          <h1>Om oss</h1>
-        </div>
-      </div>
-
+      <Heading title="Om oss" />
       <div className={classes.omOss_content}>
         <p>
           Norges Livredningsselskap arbeider med drukningsforebygging og er

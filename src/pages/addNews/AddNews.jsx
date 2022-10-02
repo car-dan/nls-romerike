@@ -5,6 +5,7 @@ import { BASE_URL } from "../../constants/api";
 import AuthContex from "../../components/contex/AuthContex";
 
 import "../signUp/SignUp.module.scss";
+import Heading from "../../components/layout/Heading";
 
 function AddNews() {
   const [file, setFile] = useState(false);
@@ -81,12 +82,7 @@ function AddNews() {
 
   return (
     <>
-      <div className="breadcrumbs">
-        <div>
-          <h1>Admin</h1>
-          <h2>Artikkel</h2>
-        </div>
-      </div>
+      <Heading title="Admin" subtitle="Nyhet" />
       <form>
         <label>Overskrift</label>
         <input id="overskrift" type="text" onChange={handleChange} />

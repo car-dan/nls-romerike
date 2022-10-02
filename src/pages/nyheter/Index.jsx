@@ -2,6 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import NewsApiCall from "../../components/common/NewsapiCall";
 import AuthContex from "../../components/contex/AuthContex";
+import Heading from "../../components/layout/Heading";
 
 const Nyheter = () => {
   const [auth, setAuth] = useContext(AuthContex);
@@ -9,22 +10,10 @@ const Nyheter = () => {
   return (
     <>
       {auth ? (
-        <>
-          <div className="breadcrumbs">
-            <div className="breadcrumbs_text">
-              <h1>Admin</h1>
-              <h2>Nyheter</h2>
-            </div>
-          </div>
-        </>
+        <Heading title="Admin" subtitle="Nyheter" />
       ) : (
-        <div className="breadcrumbs">
-          <div className="breadcrumbs_text">
-            <h1>Nyheter</h1>
-          </div>
-        </div>
+        <Heading title="Nyheter" />
       )}
-
       <NewsApiCall />
     </>
   );

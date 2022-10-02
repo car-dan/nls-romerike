@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { BASE_URL } from "../../constants/api";
+import Heading from "../../components/layout/Heading";
 
 function AddKursSpecific() {
   const [sted, setSted] = useState();
@@ -118,12 +119,7 @@ function AddKursSpecific() {
 
   return (
     <>
-      <div className="breadcrumbs">
-        <div className="breadcrumbs_text">
-          <h1>Admin</h1>
-          <h2>Kurs</h2>
-        </div>
-      </div>
+      <Heading title="Admin" subtitle="Kurs" />
       <form>
         <label>Sted </label>
         <input

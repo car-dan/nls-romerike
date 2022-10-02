@@ -5,6 +5,7 @@ import moments from "moment/moment";
 import { BASE_URL } from "../../constants/api";
 
 import classes from "../kontakt/Contact.module.scss";
+import Heading from "../../components/layout/Heading";
 
 function SignUpAuth() {
   const [pamelding, setPamelding] = useState([]);
@@ -57,12 +58,7 @@ function SignUpAuth() {
 
   return (
     <>
-      <div className="breadcrumbs">
-        <div className="breadcrumbs_text">
-          <h1>Admin</h1>
-          <h2>Påmelding</h2>
-        </div>
-      </div>
+      <Heading title="Adming" subtitle="Påmelding" />
       <form>
         <label>Hall</label>
         <input

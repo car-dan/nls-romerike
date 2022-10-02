@@ -7,6 +7,7 @@ import axios from "axios";
 import FormError from "../../components/common/FormError";
 import { BASE_URL } from "../../constants/api";
 import AuthContex from "../../components/contex/AuthContex";
+import Heading from "../../components/layout/Heading";
 
 const url = BASE_URL + "/auth/local";
 
@@ -56,11 +57,7 @@ export default function LoginForm() {
 
   return (
     <>
-      <div className="breadcrumbs">
-        <div className="breadcrumbs_text">
-          <h1>Log inn</h1>
-        </div>
-      </div>
+      <Heading title="Logg inn" />
       <form onSubmit={handleSubmit(onSubmit)}>
         {loginError && <FormError>{loginError}</FormError>}
         <fieldset disabled={submitting}>

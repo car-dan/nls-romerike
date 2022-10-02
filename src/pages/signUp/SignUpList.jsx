@@ -7,6 +7,7 @@ import { BASE_URL } from "../../constants/api";
 import { Link } from "react-router-dom";
 
 import classes from "../kontakt/Contact.module.scss";
+import Heading from "../../components/layout/Heading";
 
 const url = BASE_URL + "/paameldingers";
 
@@ -37,12 +38,7 @@ function SignUpList() {
   if (error) return <div>{}</div>;
   return (
     <>
-      <div className="breadcrumbs">
-        <div className="breadcrumbs_text">
-          <h1>Admin</h1>
-          <h2>Påmeldinger</h2>
-        </div>
-      </div>
+      <Heading title="Adming" subtitle="Påmeldinger" />
       <div className={classes.contactAut}>
         {contactInfo.map((info) => {
           return (

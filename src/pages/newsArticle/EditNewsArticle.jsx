@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { BASE_URL } from "../../constants/api";
 
 import "../signUp/SignUp.module.scss";
+import Heading from "../../components/layout/Heading";
 
 function EditNewsArticle() {
   const [auth, setAuth] = useContext(AuthContex);
@@ -114,12 +115,7 @@ function EditNewsArticle() {
 
   return (
     <>
-      <div className="breadcrumbs">
-        <div className="breadcrumbs_text">
-          <h1>Admin</h1>
-          <h2>Nyhet</h2>
-        </div>
-      </div>
+      <Heading title="Admin" subtitle="Nyhet" />
       <form>
         <label>Overskrift: </label>
         <input

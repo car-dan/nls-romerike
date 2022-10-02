@@ -8,6 +8,7 @@ import axios from "axios";
 import moment from "moment/moment";
 
 import classes from "./Contact.module.scss";
+import Heading from "../../components/layout/Heading";
 
 const initialValues = {
   navn: "navn",
@@ -67,11 +68,7 @@ function Kontakt(data) {
 
   return (
     <>
-      <div className="breadcrumbs">
-        <div className="breadcrumbs_text">
-          <h1>Kontak oss</h1>
-        </div>
-      </div>
+      <Heading title="Kontak oss" />
       <div className={classes.contact_info}>
         <table>
           <tbody>

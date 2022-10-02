@@ -7,6 +7,7 @@ import moment from "moment/moment";
 import { Link, useParams } from "react-router-dom";
 
 import classes from "./Contact.module.scss";
+import Heading from "../../components/layout/Heading";
 
 const url = BASE_URL + "/kontaktskjemas";
 
@@ -39,12 +40,7 @@ function ContactAut() {
   if (error) return <div>{}</div>;
   return (
     <>
-      <div className="breadcrumbs">
-        <div className="breadcrumbs_text">
-          <h1>Admin</h1>
-          <h2>Kontakt</h2>
-        </div>
-      </div>
+      <Heading title="Admin" subtitle="Kontakt" />
       <div className={classes.contactAut}>
         {contactInfo.map((info) => {
           return (

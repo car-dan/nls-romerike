@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { BASE_URL } from "../../constants/api";
 import classes from "./Contact.module.scss";
+import Heading from "../../components/layout/Heading";
 
 function ContactAuthItem() {
   const [contact, setContact] = useState([]);
@@ -50,12 +51,7 @@ function ContactAuthItem() {
 
   return (
     <>
-      <div className="breadcrumbs">
-        <div className="breadcrumbs_text">
-          <h1>Admin</h1>
-          <h2>Kontakt</h2>
-        </div>
-      </div>
+      <Heading title="Admin" subtitle="Kontakt" />
       <form>
         <input
           className={classes.contactAuthItem__navn}

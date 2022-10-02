@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import { BASE_URL } from "../../constants/api";
+import Heading from "../../components/layout/Heading";
 
 function AddKursNew() {
   const [sted, setSted] = useState(" ");
@@ -94,12 +95,7 @@ function AddKursNew() {
 
   return (
     <>
-      <div className="breadcrumbs">
-        <div className="breadcrumbs_text">
-          <h1>Admin</h1>
-          <h2>Kurs</h2>
-        </div>
-      </div>
+      <Heading title="Adming" subtitle="Kurs" />
       <form>
         <label>Sted </label>
         <input type="text" name="sted" value={sted} onChange={handleChange} />

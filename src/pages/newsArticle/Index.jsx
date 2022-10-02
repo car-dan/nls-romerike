@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Heading from "../../components/layout/Heading";
 import { BASE_URL } from "../../constants/api";
 
 import classes from "./NewsArticle.module.scss";
@@ -36,11 +37,7 @@ function NewsArticle() {
 
   return (
     <>
-      <div className="breadcrumbs">
-        <div className="breadcrumbs_text">
-          <h1>Nyhet</h1>
-        </div>
-      </div>
+      <Heading title="Nyhet" />
       <div className={classes.article}>
         <img src={imageSource} alt={imageAlt} />
         <div className={classes.article__content}>

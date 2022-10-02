@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import moment from "moment/moment";
 import SignUpForm from "./Form";
 import { BASE_URL } from "../../constants/api";
+import Heading from "../../components/layout/Heading";
 
 function SignUp() {
   let params = useParams();
@@ -26,11 +27,7 @@ function SignUp() {
 
   return (
     <>
-      <div className="breadcrumbs">
-        <div className="breadcrumbs_text">
-          <h1>Kurs</h1>
-        </div>
-      </div>
+      <Heading title="Kurs" />
       <SignUpForm
         kurs={kurs.sted}
         type={kurs.Type_kurs}
