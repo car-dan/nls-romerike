@@ -2,7 +2,7 @@ export const arrayKurs = [
   {
     key: 1,
     type: "baby",
-    img: "https://res.cloudinary.com/semesterproject2/image/upload/v1661117978/baby_f454ed86ab.jpg?updated_at=2022-08-21T23:39:41.882Z",
+    img: "https://res.cloudinary.com/semesterproject2/image/upload/v1664701085/NLS_Romerike_beskjaert_JPEG_BAW_010_dbc5f94f37.jpg?updated_at=2022-10-02T08:58:09.533Z",
     dropdown: [
       {
         id: 1,
@@ -49,7 +49,7 @@ export const arrayKurs = [
   {
     key: 2,
     type: "smabarn",
-    img: "https://res.cloudinary.com/semesterproject2/image/upload/v1661685776/bilde2_a3e0018d3f.jpg?updated_at=2022-08-28T11:22:59.788Z",
+    img: "https://res.cloudinary.com/semesterproject2/image/upload/v1664701003/NLS_Romerike_beskjaert_JPEG_BAW_012_0a2480b6af.jpg?updated_at=2022-10-02T08:56:47.447Z",
     dropdown: [
       {
         id: 1,
@@ -151,7 +151,7 @@ export const arrayKurs = [
   {
     key: 3,
     type: "svommekurs",
-    img: "https://res.cloudinary.com/semesterproject2/image/upload/v1661685776/bilde2_a3e0018d3f.jpg?updated_at=2022-08-28T11:22:59.788Z",
+    img: "https://res.cloudinary.com/semesterproject2/image/upload/v1664701080/NLS_Romerike_beskjaert_JPEG_BAW_017_00e79bb8b2.jpg?updated_at=2022-10-02T08:58:04.775Z",
     dropdown: [
       {
         id: 1,

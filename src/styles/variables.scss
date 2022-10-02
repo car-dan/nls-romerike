@@ -57,6 +57,11 @@ $fontSizeLarge: 1.5rem;
 $fontSizeXl: 2rem;
 
 @mixin breakpoint($point) {
+  @if $point == xs {
+    @media (max-width: 924px) {
+      @content;
+    }
+  }
   @if $point == md {
     //768px
     @media (min-width: 48em) {
