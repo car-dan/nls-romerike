@@ -27,7 +27,6 @@ const url = BASE_URL + "/kontaktskjemas";
 
 function Kontakt(data) {
   const [formValues, setFormValues] = useState(initialValues);
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [buttonText, setButtonText] = useState("Send");
   const today = moment().toISOString(new Date());
 

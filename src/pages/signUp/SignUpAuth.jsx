@@ -26,13 +26,13 @@ function SignUpAuth() {
   }, [params.id]);
   function handleSubmit(e) {
     e.preventDefault();
-    console.log("submitt");
+
     let path = "/kurs/pamelding";
     if (pamelding.lest) {
       navigate(path);
     } else {
       setButtonText("Sending...");
-      console.log(params.id);
+
       axios
         .put(BASE_URL + `/paameldingers/${params.id}`, {
           data: {

@@ -16,12 +16,6 @@ function SignUpList() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // const params = useParams();
-  // function handleClick() {
-  //   console.log("klikk");
-  //   console.log("kontakt/aut/" + EventTarget.id);
-  // }
-
   useEffect(function () {
     async function getContactForms() {
       try {

@@ -42,7 +42,6 @@ function AddNews() {
       setHeading(event.target.value);
     } else if (event.target.type === "date") {
       setDato(event.target.value);
-      console.log(event.target.value);
     }
   };
 
@@ -68,7 +67,6 @@ function AddNews() {
           },
         })
         .then((response) => {
-          console.log(response);
           if (response?.status === 200) {
             setButtonText("Sendt");
             setTimeout(function () {

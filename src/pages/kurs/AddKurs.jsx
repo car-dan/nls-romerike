@@ -1,24 +1,21 @@
-import { useEffect, useState, useContext } from "react";
-import AuthContex from "../../components/contex/AuthContex";
+import { useEffect, useState } from "react";
+
 import axios from "axios";
 import moment from "moment";
 import { BASE_URL } from "../../constants/api";
 
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import classes from "../kontakt/Contact.module.scss";
 
 const url = BASE_URL + "/kurs";
 
 function AddKurs() {
-  const [auth, setAuth] = useContext(AuthContex);
   const [kurs, setKurs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectType, setSelectType] = useState("Type Kurs");
   const [selectSted, setSelectSted] = useState("Velg Sted");
   const [error, setError] = useState(null);
-
-  const params = useParams();
 
   useEffect(function () {
     async function getContactForms() {
@@ -39,8 +36,6 @@ function AddKurs() {
 
   if (loading) return <div>Loading Kurs...</div>;
   if (error) return <div>{}</div>;
-
-  // const kursSted = [...new Set(kurs.map((k) => k.attributes.sted))];
 
   const kursType = [...new Set(kurs.map((t) => t.attributes.Type_kurs))];
 

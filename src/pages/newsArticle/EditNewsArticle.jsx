@@ -27,7 +27,7 @@ function EditNewsArticle() {
       async function getArticle() {
         try {
           const respons = await axios.get(url);
-          console.log(respons);
+
           setNewsArticle(respons.data.data);
           setPreview(respons.data.data.attributes.Image.data.attributes.url);
         } catch (error) {
@@ -44,7 +44,7 @@ function EditNewsArticle() {
   useEffect(() => {
     if (!selectedFile) {
       console.log(preview);
-      //   setPreview(newsArticle.attributes.Image.data.attributes.url);
+
       return;
     }
 
@@ -98,7 +98,6 @@ function EditNewsArticle() {
         },
       })
       .then((response) => {
-        console.log(response);
         if (response?.status === 200) {
           setButtonText("Sendt");
           setTimeout(function () {

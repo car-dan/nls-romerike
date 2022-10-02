@@ -6,7 +6,6 @@ import "./SignUp.module.scss";
 import { isValid } from "date-fns";
 import { useState } from "react";
 import moment from "moment/moment";
-import { parse } from "date-fns";
 import { BASE_URL } from "../../constants/api";
 
 const schema = yup.object().shape({
@@ -34,6 +33,8 @@ const schema = yup.object().shape({
 });
 
 function ContactForm(props) {
+  const [buttonText, setButtonText] = useState("Send");
+
   const initialValues = {
     navnForesatte: "",
     epost: "",
@@ -46,7 +47,7 @@ function ContactForm(props) {
     kommentar: "",
   };
   const [formValues, setFormValues] = useState(initialValues);
-  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const kursType = "Kurs: " + props.type;
   const kursSted = props.kurs;
   const startTid = props.startTime;
@@ -63,13 +64,10 @@ function ContactForm(props) {
   async function OnSubmit(data) {
     const url = BASE_URL + "/paameldingers";
     setFormValues(data);
-    console.log(data);
-    console.log(formValues.barnFodselsdato);
+
     const bday = moment(formValues.barnFodselsdato).utc().format("YYYY-MM-DD");
 
     if (isValid) {
-      console.log("juppi");
-
       const apiData = JSON.stringify({
         data: {
           sted: kursSted,
@@ -98,10 +96,8 @@ function ContactForm(props) {
       try {
         const response = await fetch(url, option);
         const json = await response.json();
-        console.log(json);
-      } catch (error) {
-        console.log(error);
-      }
+        setButtonText("Sendt");
+      } catch (error) {}
     }
   }
 
@@ -140,7 +136,7 @@ function ContactForm(props) {
 
         <textarea {...register("kommentar")} placeholder="Kommentar" />
         {errors.kommentar && <span>{errors.kommentar.message}</span>}
-        <button>Send</button>
+        <button>{buttonText}</button>
       </form>
     </>
   );

@@ -8,7 +8,6 @@ function NewsArticle() {
   let params = useParams();
   const [article, setArticle] = useState([]);
   const [text, setText] = useState([]);
-  const [activeTab, setActiveTab] = useState("instructions");
 
   const url = BASE_URL + `/articles/${params.id}?populate=*`;
 
@@ -16,8 +15,7 @@ function NewsArticle() {
     console.log(params.id);
     const data = await fetch(url);
     const test = await data.json();
-    console.log(test.data.attributes);
-    console.log(test.data.attributes.text);
+
     setText(test.data.attributes.text);
     setArticle(test.data.attributes);
   };
@@ -30,10 +28,6 @@ function NewsArticle() {
   let imageAlt = "";
 
   let newText = text.toString().split(`\n`);
-
-  // let newTextList = newText.map((e) => {
-  //   console.log(e);
-  // });
 
   if (article.Image) {
     imageSource = article.Image.data.attributes.url;
@@ -64,15 +58,6 @@ function NewsArticle() {
 
             return <p>{e}</p>;
           })}
-
-          {/* {newText.map((e) => {
-            if (e === "") {
-              console.log("space");
-              // return <br>;
-              return <br></br>;
-            }
-            return <p>{e}</p>;
-          })} */}
         </div>
       </div>
     </>

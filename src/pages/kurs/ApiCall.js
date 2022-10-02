@@ -19,7 +19,6 @@ export default function ApiCall(props) {
     async function getKurs() {
       try {
         const response = await axios.get(url);
-        console.log(response.data.data);
         setKurs(response.data.data);
       } catch (error) {
         setError(error.toString());
@@ -36,18 +35,6 @@ export default function ApiCall(props) {
   const kursSted = [...new Set(kurs.map((k) => k.attributes.sted))];
 
   const kursType = [...new Set(kurs.map((t) => t.attributes.Type_kurs))];
-  // const matchingKurs = kursType.filter((k) => {
-  //   return (k = props);
-  // });
-
-  // console.log(kursType);
-  // console.log(matchingKurs);
-  // if (matchingKurs.length === 0)
-  //   return (
-  //     <div className={classes.kurs__main__liste__error}>
-  //       <p>Ingen kurs som matcher</p>
-  //     </div>
-  //   );
 
   const handleChangeType = (e) => {
     setSelectType(e.target.value);

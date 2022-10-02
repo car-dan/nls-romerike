@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import moment from "moment/moment";
 import SignUpForm from "./Form";
 import { BASE_URL } from "../../constants/api";
-///api/kurs/:id
 
 function SignUp() {
   let params = useParams();
