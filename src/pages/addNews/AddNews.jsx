@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import TextareaAutosize from "react-textarea-autosize";
 import { BASE_URL } from "../../constants/api";
+import AuthContex from "../../components/contex/AuthContex";
 
 import "../signUp/SignUp.module.scss";
 
@@ -14,6 +15,7 @@ function AddNews() {
   const [buttonText, setButtonText] = useState("Oppdater");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [auth, setAuth] = useState(AuthContex);
 
   useEffect(() => {
     if (!file) {

@@ -135,5 +135,20 @@
 
   select {
     margin: 1rem;
+    padding: 1rem 1.2rem;
+    border-radius: $borderRadius;
+
+    @include breakpoint(md) {
+      width: 30%;
+    }
+
+    @include breakpoint(lg) {
+      font-size: $fontSizeLarge;
+      border-spacing: 1.5rem;
+    }
+    @include breakpoint(xl) {
+      padding: 2rem 1.3rem;
+      width: 30%;
+    }
   }
 }

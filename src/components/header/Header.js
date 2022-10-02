@@ -16,11 +16,6 @@ const Header = () => {
   const [auth, setAuth] = useContext(AuthContex);
   const history = useNavigate();
 
-  function logout() {
-    setAuth(null);
-    history.push("/");
-  }
-
   useEffect(() => {
     const handleResize = () => {
       setSize({
@@ -42,6 +37,13 @@ const Header = () => {
   const menuToggleHandler = () => {
     setMenuOpen((p) => !p);
   };
+
+  function logout() {
+    window.location.reload();
+    setAuth(false);
+    window.location.href = "/";
+    menuToggleHandler();
+  }
 
   return (
     <header className={classes.header}>
@@ -94,14 +96,7 @@ const Header = () => {
             </li>
             <li>
               {auth ? (
-                <button
-                  onClick={() => {
-                    logout();
-                    menuToggleHandler();
-                  }}
-                >
-                  Log ut
-                </button>
+                <button onClick={logout}>Log ut</button>
               ) : (
                 <Link to="/login" onClick={menuToggleHandler}>
                   Login

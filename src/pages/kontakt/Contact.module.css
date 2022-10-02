@@ -152,4 +152,23 @@ fieldset {
 }
 .kurs_update select {
   margin: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+}
+@media (min-width: 48em) {
+  .kurs_update select {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .kurs_update select {
+    font-size: 1.5rem;
+    border-spacing: 1.5rem;
+  }
+}
+@media (min-width: 2500px) {
+  .kurs_update select {
+    padding: 2rem 1.3rem;
+    width: 30%;
+  }
 }/*# sourceMappingURL=Contact.module.css.map */

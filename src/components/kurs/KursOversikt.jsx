@@ -23,7 +23,7 @@ const KursOversikt = () => {
       <div className="kursType">
         <Link to={`kurs/svommekurs`}>
           <FaSwimmer className="icon" />
-          <h3>Svømmekurs</h3>
+          <h3>Livredning og svømming</h3>
           <p>Fra ca 5 år til voksen</p>
         </Link>
       </div>
