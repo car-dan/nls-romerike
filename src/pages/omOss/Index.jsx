@@ -1,5 +1,4 @@
 import React from "react";
-
 import classes from "./Index.module.scss";
 
 const OmOss = () => {

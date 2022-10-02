@@ -5,7 +5,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import classes from "../header/Header.module.scss";
 import image from "../../assets/logo.png";
 import AuthContex from "../contex/AuthContex";
-import SearchBar from "../searchBar/Index";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -57,7 +56,6 @@ const Header = () => {
             menuOpen && size.width < 768 ? classes.isMenu : ""
           }`}
         >
-          <SearchBar />
           <ul>
             <li>
               <Link to="/nyheter" onClick={menuToggleHandler}>
