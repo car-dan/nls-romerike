@@ -51,6 +51,16 @@ label {
   margin-left: 0.5rem;
   text-transform: capitalize;
 }
+@media (min-width: 1200px) {
+  label {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 2500px) {
+  label {
+    font-size: 2rem;
+  }
+}
 
 input {
   display: block;

@@ -72,6 +72,11 @@ fieldset {
   max-width: 30%;
   height: 100%;
 }
+@media (min-width: 2500px) {
+  .contactAut__item div {
+    padding: 3rem;
+  }
+}
 .contactAut__item div:nth-child(1) {
   margin-left: 1rem;
 }

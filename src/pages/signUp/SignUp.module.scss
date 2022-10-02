@@ -52,6 +52,13 @@ label {
   margin-top: 1rem;
   margin-left: 0.5rem;
   text-transform: capitalize;
+
+  @include breakpoint(lg) {
+    font-size: $fontSizeLarge;
+  }
+  @include breakpoint(xl) {
+    font-size: $fontSizeXl;
+  }
 }
 
 input {

@@ -49,6 +49,10 @@
     div {
       max-width: 30%;
       height: 100%;
+
+      @include breakpoint(xl) {
+        padding: 3rem;
+      }
     }
 
     div:nth-child(1) {
