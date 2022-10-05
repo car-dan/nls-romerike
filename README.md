@@ -7,8 +7,11 @@ Today the costumer pays for an outside service for bookings for the courses. The
 
 The solution they use now also provides the birthdays in the wrong order, so they wanted an easier solution for that.
 
-follow the steps below to download and run the project-
 
+
+![image](https://user-images.githubusercontent.com/73527175/194138803-fe678faa-7f80-4c35-8e8f-1100070d8cc0.png)
+
+follow the steps below to download and run the project-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
