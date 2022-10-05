@@ -1,7 +1,7 @@
 # NLS Romerike
 
 This project is build to replace an exsisting website for a sports club.
-The thought behind the project is to make it easier for the users to sign up for classes.
+The thought behind the project is to make it easier for the users to sign up for classes, and the admins to access contact and signups.
 
 Today the costumer pays for an outside service for bookings for the courses. They wanted an itegrated solution for bookings, so that they did not have to pay a fee.
 
